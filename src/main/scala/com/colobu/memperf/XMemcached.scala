@@ -38,7 +38,9 @@ class XMemcached(count:Int = 100000, address:String = "127.0.0.1:11211", connect
 
   override def asyncSet: Unit = {
     for (i <- 1 to count) {
-      client.setWithNoReply("key" + i, 3600, i.toString)
+      //java.lang.IllegalStateException: No permit for noreply operation
+      //client.setWithNoReply("key" + i, 3600, i.toString)
+      client.set("key" + i, 3600, i.toString)
     }
   }
 
