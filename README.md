@@ -3,6 +3,7 @@ Benchmark for Java Memcached clients such as SpyMemcached, XMemcached and folsom
 
 
 ## Test Result
+<pre>
 ======== Folsom Test ========
 Folsom add: 10673 ms
 Folsom sync get: 297206 ms
@@ -22,3 +23,4 @@ SpyMemcached sync get: 552638 ms
 SpyMemcached async get: 42703 ms
 SpyMemcached gets: 11728 ms
 SpyMemcached async set: 48141 ms
+</pre>
