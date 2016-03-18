@@ -10,7 +10,7 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   "net.spy" % "spymemcached" % "2.12.0",
   "com.googlecode.xmemcached" % "xmemcached" % "2.0.0",
-  "com.spotify" % "folsom" % "0.7.1",
+  "com.spotify" % "folsom" % "0.7.2",
   "ch.qos.logback" % "logback-classic" % "1.1.5"
 )
 
